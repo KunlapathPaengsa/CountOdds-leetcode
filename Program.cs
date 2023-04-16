@@ -23,4 +23,12 @@
     {
         return (high + 1) / 2 - (low) / 2;
     }
+
+    public int CountOdds3(int low, int high)
+    {
+        if (1 == (low & 1)) low--;
+        if (1 == (high & 1)) high++;
+        return (high - low) >> 1;
+
+    }
 }
